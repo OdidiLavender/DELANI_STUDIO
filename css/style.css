@@ -15,3 +15,34 @@ body{
     background-position: center;
     background-repeat: no-repeat;
 }
+.services{
+    background-image: url(../images/assets/backgrounds/s_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.design-info, .dev-info, .product-info{
+    display: none;
+}
+.card p{
+    display: none;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    line-height: 5.5;
+}
+.card:hover{
+    opacity: 0.6;
+}
+input[type=text],input[type=email],#message{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.form-control::placeholder { 
+    color: white;
+    opacity: 1;
+}
+#submit{
+    background-color: white;
+    border-radius: 5px;
+}
