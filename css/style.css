@@ -1,0 +1,11 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.landing{
+    background-image: url(../images/assets/backgrounds/h_img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+    color: white;
+}
