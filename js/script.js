@@ -26,3 +26,25 @@ $(document).ready(function(){
         });
     })
 });
+
+//form submission
+function submiForm(){
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('message').value;
+    
+    if(!validateEmail(email)||email == "" || email == null){
+        alert("Please enter a valid email")
+    }else if(name == null || name == ""){
+        alert("Please enter your name")
+    }else if(message == null || message == ""){
+        alert("Please enter your message")
+    }else{
+        alert(name + " we have received your message. Thank you for contacting us.")
+    }
+}
+
+function validateEmail($email) {
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    return emailReg.test($email );
+  }
